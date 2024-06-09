@@ -1,0 +1,160 @@
+/*Reset de estilos básicos*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Estilos generales*/
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #1E2A38;
+  color: #FFFFFF;
+}
+
+/*Cabezera*/
+header {
+  background: #2E4057;
+  padding: 10px 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #00A896;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #FF6B6B;
+}
+
+/*Secciones*/
+section {
+  padding: 40px 20px;
+}
+
+h2 {
+  color: #00A896;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*Proyectos*/
+.proyectos-grid, .blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.proyecto, .entrada {
+  background: #2E4057;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.proyecto h3, .entrada h3 {
+  color: #FF6B6B;
+  margin-bottom: 10px;
+}
+
+.proyecto a, .entrada a {
+  color: #00A896;
+  text-decoration: none;
+}
+
+.proyecto a:hover, .entrada a:hover {
+  color: #FFFFFF;
+}
+
+/*Sobre Mí*/
+#sobre-mi {
+  background: #2E4057;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+#sobre-mi h2 {
+  text-align: center;
+}
+
+/*Redes Sociales*/
+#redes-sociales {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#redes-sociales h2 {
+  color: #00A896;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.social-links img {
+  width: 100%;
+  height: auto;
+  filter: invert(1); /*para que se vean bien con el fondo oscuro*/
+}
+
+/*Contacto*/
+#contacto h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #CBD4E0;
+  color: #1E2A38;
+}
+
+form button {
+  padding: 10px;
+  background: #00A896;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #FF6B6B;
+}
+
+/*Pie de página*/
+footer {
+  background: #2E4057;
+  text-align: center;
+  padding: 10px 0;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Interactivo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Cabezera -->
+
+   <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Home</a></li>
+        <li><a href="#proyectos">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#sobre-mi">About me</a></li>
+        <li><a href="#contacto">Contact</a></li>
+      </ul>
+    </nav>
+   </header>
+
+   <!-- Secciones de inicio -->
+
+    <section id="inicio">
+      <div class="intro">
+        <h1>Hello, I'm Jason!</h1>
+        <p>Growing frontend developer.</p>
+      </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+     <section id="proyectos">
+      <h2>Projects</h2>
+      <div class="proyectos-grid">
+        <!-- Proyecto 1 -->
+         <div class="proyecto">
+          <h3>Project 1</h3>
+          <p>Project description.</p>
+          <a href="#">See more</a>
+         </div>
+        <!-- Proyecto 2 -->
+          <div class="proyecto">
+            <h3>Project 2</h3>
+            <p>Project description.</p>
+            <a href="#">See more</a>
+          </div>
+
+        <!-- AGREGAR MÁS PROYECTOS AQUÍ EN EL FUTURO -->
+      
+      </div>
+     </section>
+
+     <!-- Sección de Blog -->
+      <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-grid">
+          <!--Entrada de Blog 1-->
+          <div class="entrada">
+            <h3>Entry 1</h3>
+            <p>Description of the blog entry.</p>
+            <a href="#">See more</a>
+          </div>
+          <!--Entrada Blog 2-->
+          <div class="entrada">
+            <h3>Entry 2</h3>
+            <p>Description of the blog entry.</p>
+            <a href="#">See more</a>
+          </div>
+
+          <!-- AGREGAR MÁS ENTRADAS DE BLOG AQUÍ EN EL FUTURO -->
+
+        </div>
+      </section>
+
+      <!--Sobre mí-->
+      <section id="sobre-mi">
+        <h2>About me</h2>
+        <p>Brief description about me.</p>
+      </section>
+
+      <!--Redes Sociales-->
+      <section id="redes-sociales">
+        <h2>Social Media</h2>
+        <div class="social-links">
+          <a href="https://www.instagram.com/thejasondev" target="_blank">
+            <img src="icons/instagram.svg" alt="Instagram">
+          </a>
+          <a href="https://x.com/thejasondev" target="_blank">
+            <img src="icons/x.svg" alt="X">
+          </a>
+          <a href="https://github.com/thejasondev" target="_blank">
+            <img src="icons/github.png" alt="GitHub">
+          </a>
+        </div>
+      </section>
+
+      <!--Sección de contacto-->
+      <section id="contacto">
+        <h2>Contact</h2>
+        <form>
+          <label for="nombre">Name</label>
+          <input type="text" id="nombre" name="nombre">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="mensaje">Message</label>
+          <textarea name="mensaje" id="mensaje"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <!--Pie de página-->
+      <footer>
+        <p>&copy; 2024 @thejasondev. All rights reserved.</p>
+      </footer>
+
+      <script src="script.js"></script>
+</body>
+</html>
